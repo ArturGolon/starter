@@ -183,7 +183,7 @@ if (age < 13) {
 */
 
 //THE TERNERY OPERATOR AND SWITCH STATEMENTS
-
+/*
 var firstName = "Artur";
 var age = 14;
 //ternery operator
@@ -201,7 +201,7 @@ if (age >= 18) {
 }*/
 
 //switch statement
-
+/*
 var job = "teacher";
 switch (job) {
   case "teacher":
@@ -230,4 +230,24 @@ switch (true) {
     break;
   default:
     console.log(firstName + " is a man");
+}
+*/
+
+//TRUTH AND FALSY VALUES AND EQUALITY OPERATORS
+
+//FALSY VALUES : Undefined , null, 0, '', NaN
+//TRUTHY VALUES : NOT falsy values
+
+var height;
+height = "3";
+if (height || height === 0) {
+  console.log("Veriable is defined");
+} else {
+  console.log("Veriable has NOT been defined");
+}
+
+//Equality operators
+
+if (height === 3) {
+  console.log("The == operator does type coercion!");
 }
