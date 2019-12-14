@@ -90,7 +90,7 @@ var x;
 console.log(typeof x);
 */
 /**OPERATOR PRECEDENCE */
-
+/** 
 var now = 2018;
 var yearJohn = 1989;
 var fullAge = 18;
@@ -116,3 +116,18 @@ x += 10;
 console.log(x);
 x++;
 console.log(x);
+*/
+
+//**CODING CHALLENGE 1*/
+// simple challenge to calculate which BMI is higher
+var massMark = 78; // kg
+var heightMark = 1.69; //meters
+
+var massJohn = 92;
+var heightJohn = 1.95;
+
+var BMIMark = massMark / (heightMark * heightMark);
+var BMIJohn = massJohn / (heightJohn * massJohn);
+
+var markHigherBMI = BMIMark > BMIJohn;
+console.log("Is Mark's BMI higher than John's " + markHigherBMI);
