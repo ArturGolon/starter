@@ -315,6 +315,8 @@ yearsUntilRetirement(1923, "Mirek");
 
 //FUNCTION STATEMENT AND EXPRESSIONS
 
+//EXPRESSION
+/*
 var whatDoYouDo = function(job, firstName) {
   switch (job) {
     case "teacher":
@@ -332,3 +334,39 @@ console.log(whatDoYouDo("teacher", "Artur"));
 console.log(whatDoYouDo("driver", "Kasia"));
 console.log(whatDoYouDo("designer", "Marek"));
 console.log(whatDoYouDo("retired", "Mirek"));
+*/
+
+//ARRAYS
+
+//initialize  new array
+var names = ["Artur", "Kasia", "Marek", "Mirek"];
+var years = new Array(1991, 1995, 1966, 1921);
+
+console.log(names[1]);
+console.log(names.length);
+
+//mutate array data
+names[1] = "Robert";
+names[names.length] = "Iza";
+console.log(names);
+
+//Different data types
+
+var artur = ["Artur", "Kasia", 1991, "designer", false];
+
+artur.push("blue");
+artur.unshift("Mr.");
+console.log(artur);
+
+artur.pop();
+artur.pop();
+artur.shift();
+console.log(artur);
+
+console.log(artur.indexOf(23));
+
+var isDesigner =
+  artur.indexOf("designer") === -1
+    ? "Artur is NOT a desginer"
+    : "Artur IS a designer";
+console.log(isDesigner);
