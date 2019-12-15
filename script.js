@@ -281,7 +281,7 @@ if (scoreJohn > scoreMike) {
 */
 
 //FUNCTIONS
-
+/*
 function calculateAge(birthYear) {
   return 2019 - birthYear;
 }
@@ -311,3 +311,24 @@ yearsUntilRetirement(1991, "Artur");
 yearsUntilRetirement(1995, "Kasia");
 yearsUntilRetirement(1966, "Marek");
 yearsUntilRetirement(1923, "Mirek");
+*/
+
+//FUNCTION STATEMENT AND EXPRESSIONS
+
+var whatDoYouDo = function(job, firstName) {
+  switch (job) {
+    case "teacher":
+      return firstName + " Teaches kids how to code";
+    case "driver":
+      return firstName + " Driver an Uber in Poland";
+    case "designer":
+      return firstName + " Designs beutiful websites";
+    default:
+      return firstName + " Does something else";
+  }
+};
+
+console.log(whatDoYouDo("teacher", "Artur"));
+console.log(whatDoYouDo("driver", "Kasia"));
+console.log(whatDoYouDo("designer", "Marek"));
+console.log(whatDoYouDo("retired", "Mirek"));
