@@ -427,7 +427,7 @@ console.log(jane);
 */
 
 //OBJECTS AND METHODS
-
+/*
 var artur = {
   firstName: "Artur",
   lastName: "Golon",
@@ -442,3 +442,38 @@ var artur = {
 
 artur.calcAge();
 console.log(artur);
+*/
+
+//CODING CHALLENGE 4
+
+var artur = {
+  firstName: "Artur",
+  mass: 97,
+  height: 1.8,
+  calcBMI: function() {
+    this.bmi = this.mass / (this.height * this.height);
+    return this.bmi;
+  }
+};
+
+var kasia = {
+  firstName: "Kasia",
+  mass: 55,
+  height: 1.7,
+  calcBMI: function() {
+    this.bmi = this.mass / (this.height * this.height);
+    return this.bmi;
+  }
+};
+
+if (artur.calcBMI() > kasia.calcBMI()) {
+  console.log(
+    artur.firstName + " has higher BMI then Kasia, he score " + artur.bmi
+  );
+} else if (kasia.bmi > artur.bmi) {
+  console.log(
+    kasia.firstName + "has higher BMI then Artur, she score " + kasia.bmi
+  );
+} else {
+  console.log("They have the same BMI");
+}
