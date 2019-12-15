@@ -254,7 +254,7 @@ if (height === 3) {
 */
 
 //CODING CHALLENGE 2
-
+/*
 var scoreJohn = (110 + 120 + 103) / 3;
 var scoreMike = (110 + 120 + 103) / 3;
 var scoreMary = (97 + 134 + 105) / 3;
@@ -279,3 +279,35 @@ if (scoreJohn > scoreMike) {
   console.log("There is a draw");
 }
 */
+
+//FUNCTIONS
+
+function calculateAge(birthYear) {
+  return 2019 - birthYear;
+}
+
+var ageArtur = calculateAge(1991);
+var ageKasia = calculateAge(1995);
+var ageMarek = calculateAge(1966);
+
+console.log(
+  "Artur is " + ageArtur + ",",
+  "Kasia is " + ageKasia + ",",
+  "Marek is " + ageMarek
+);
+
+function yearsUntilRetirement(year, firstName) {
+  var age = calculateAge(year);
+  var retirement = 65 - age;
+
+  if (retirement > 0) {
+    console.log(firstName + " retires in " + retirement + " years.");
+  } else {
+    console.log(firstName + " is already retired");
+  }
+}
+
+yearsUntilRetirement(1991, "Artur");
+yearsUntilRetirement(1995, "Kasia");
+yearsUntilRetirement(1966, "Marek");
+yearsUntilRetirement(1923, "Mirek");
