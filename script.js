@@ -373,7 +373,7 @@ console.log(isDesigner);
 */
 
 //CODING CHALLENGE 3
-
+/*
 function tipCalculator(bill) {
   var percentage;
   if (bill < 50) {
@@ -394,3 +394,33 @@ var tip = [
 
 var finalValues = [bills[0] + tip[0], bills[1] + tip[1], bills[2] + tip[2]];
 console.log(tip, finalValues);
+*/
+
+//OBJECTS AND PROPERTIES
+
+//Object literal
+var artur = {
+  firstName: "Artur",
+  lastName: "Golon",
+  birthYear: 1991,
+  family: ["Kasia", "Marek", "Mirek"],
+  job: "coder",
+  isMarried: false
+};
+
+console.log(artur.firstName);
+console.log(artur["lastName"]);
+var x = "birthYear";
+console.log(artur[x]);
+
+artur.job = "desginer";
+artur["isMarried"] = true;
+console.log(artur);
+
+// new Object Syntax
+
+var jane = new Object();
+jane.firstName = "Jane";
+jane.birthYear = 1962;
+jane["lastName"] = "Smith";
+console.log(jane);
