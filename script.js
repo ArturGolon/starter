@@ -337,7 +337,7 @@ console.log(whatDoYouDo("retired", "Mirek"));
 */
 
 //ARRAYS
-
+/*
 //initialize  new array
 var names = ["Artur", "Kasia", "Marek", "Mirek"];
 var years = new Array(1991, 1995, 1966, 1921);
@@ -370,3 +370,27 @@ var isDesigner =
     ? "Artur is NOT a desginer"
     : "Artur IS a designer";
 console.log(isDesigner);
+*/
+
+//CODING CHALLENGE 3
+
+function tipCalculator(bill) {
+  var percentage;
+  if (bill < 50) {
+    percentage = 0.2;
+  } else if (bill >= 50 && bill < 200) {
+    percentage = 0.15;
+  } else {
+    percentage = 0.1;
+  }
+  return percentage * bill;
+}
+var bills = [124, 48, 268];
+var tip = [
+  tipCalculator(bills[0]),
+  tipCalculator(bills[1]),
+  tipCalculator(bills[2])
+];
+
+var finalValues = [bills[0] + tip[0], bills[1] + tip[1], bills[2] + tip[2]];
+console.log(tip, finalValues);
