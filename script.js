@@ -480,7 +480,7 @@ if (artur.calcBMI() > kasia.calcBMI()) {
 */
 
 //LOOPS AND ITERATION
-
+/*
 for (var i = 1; i <= 20; i++) {
   console.log(i);
 }
@@ -496,4 +496,24 @@ while (i < artur.length) {
   console.log(artur[i]);
   i++;
 }
+*/
+
 //Continue and break statement
+
+var artur = ["artur", "golon", 1991, "coder", "false", "blue"];
+
+for (var i = 0; i < artur.length; i++) {
+  if (typeof artur[i] !== "string") continue;
+  console.log(artur[i]);
+}
+
+for (var i = 0; i < artur.length; i++) {
+  if (typeof artur[i] !== "string") break;
+  console.log(artur[i]);
+}
+
+//looping backwards
+
+for (var i = artur.length - 1; i >= 0; i--) {
+  console.log(artur[i]);
+}
