@@ -445,7 +445,7 @@ console.log(artur);
 */
 
 //CODING CHALLENGE 4
-
+/*
 var artur = {
   firstName: "Artur",
   mass: 97,
@@ -477,3 +477,23 @@ if (artur.calcBMI() > kasia.calcBMI()) {
 } else {
   console.log("They have the same BMI");
 }
+*/
+
+//LOOPS AND ITERATION
+
+for (var i = 1; i <= 20; i++) {
+  console.log(i);
+}
+
+var artur = ["artur", "golon", 1991, "coder", "false", "blue"];
+
+for (var i = 0; i < artur.length; i++) {
+  console.log(artur[i]);
+}
+//while loop
+var i = 0;
+while (i < artur.length) {
+  console.log(artur[i]);
+  i++;
+}
+//Continue and break statement
